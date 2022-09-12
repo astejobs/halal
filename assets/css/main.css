@@ -2758,3 +2758,26 @@ table.order-details tbody td {
 .sl1{
   background-image: url('../img/iccv-bg.jpg');
 }
+.h1img{
+  box-sizing: border-box;
+  width:100px !important;
+  height:120px !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  position: absolute !important;
+}
+.section2para{
+  font-family: 'Satisfy', cursive;
+  font-weight:800;
+  font-size: 25px;
+}
+.stamp{
+  width:250px;
+}
+.col2Heading{
+  display:inline-block !important;
+  font-size: 18px;
+  margin-left: 2px !important;
+  color:#323232 !important;
+
+}
