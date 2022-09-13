@@ -88,15 +88,38 @@ button:hover {
 .step.finish {
   background-color: #04AA6D;
 }
+.tbl, th,td{
+      border: 2px solid black !important;
+     }
+     .t2 td{
+      border:none !important;
+     }
 </style>
 </head>
 <body>
     <div class="container">
     <form  id="regForm" action="/action_page.php">
-        <div class="tab">
+           <div class="tab" >
         <div class="row">
+            <div class="col-md-2">
+                <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                
+            </div>
+            <div class="col-md-8">
+            <h4 class="text-center"><b> ISLAMIC CO-ORDINATING COUNCIL
+                OF VICTORIA (ICCV) PTY. LTD.</b></h4>
+                <h6 class="text-center"> 12 Howes Street, Airport West VIC 3042 (PO Box 775 Tullamarine VIC 3043)<br>
+                    Phone : + 61 3 9380 5467 Fax : +61 3 9380 6143<br>
+                    Web page : www.iccv.com.au Email : office@iccv.com.au <br>
+                <b>ABN : 30 542 393 936</b>   </h6>
+                <h3 class="text-center"><b> APPLICATION FOR HALAL CERTIFICATION <br>(Food Processing)</b></h3>
+            </div>
+            <div class="col-md-2">
+                <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+            </div>
+            <br>
             <div class="col-md-12">
-                <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4"> SECTION 1: APPLICANT INFORMATION</p>
+                <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4 mt-4"> SECTION &nbsp;<span style="font-size:22px;">1</span>: APPLICANT INFORMATION</p>
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail4"><b>Name Of Organisation </b></label>
@@ -118,45 +141,33 @@ button:hover {
          
           <div class="form-group col-md-12">
             <label for="inputAddress2"> <b>Type of business Legal status(please tick one or more) </b></label>
-        </div>
+        </div> 
+        <div class=" col-md-12">
+                                    
+            <table class="t2" style="border:none !important;">
+                <tr>
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td>Sole Trader</td>
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td>Partnership</td>
+                    
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td>Trust</td>
+                </tr>
+                <tr>
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td>Private Company</td>
+                   
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td> Public Company</td>
+                    <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                    <td>Others</td>
+                </tr>
+           </table>
+           </div>
+           
             
-            <!-- <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Sole Trader 
-                </label> 
-              </div>
-              <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Partnership
-                </label> 
-              </div>
-              <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Trust
-                </label> 
-              </div>
-              <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                Private Company
-                </label> 
-              </div>
-              <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Public Company
-                </label> 
-              </div>
-               <div class=" col-md-4 form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    other
-                </label> 
-              </div> -->
-              <div class="form-group col-md-12">
+               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b>Trading Site Address </b></label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="Trading Site Adress">
               </div>
@@ -181,17 +192,29 @@ button:hover {
                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
               </div>
               
-              <div class="form-group col-md-6">
-                <label for="inputAddress2"> <b>Is the Applicant part of a Larger Group:</b></label>
-                 <input type="checkbox" path="" value="Yes" >Yes &nbsp;
-                <input type="checkbox" path="" value="No" >&nbsp; No
+             
+            <div class=" col-md-6">
+                <label for="inputAddress2"> <b>Is the Applicant part of a Larger Group:</b></label>                  
+                <table class="t2" style="border:none !important;">
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Yes</td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>No</td>
+                    </tr>
+                    
+               </table>
+               </div>
+               <div class="form-group col-md-6">
+                <label for="inputAddress2"> <b>Name Of the Group</b></label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
             </div>
             <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b>website:</b></label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
             </div><br><br>
         <div class="col-md-12">
-            <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4"> SECTION 2: CONTACT PERSON/ AUTHORISED REPRESENTATIVE FOR THIS APPLICATION</p>
+            <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4"> SECTION &nbsp;<span style="font-size:22px;">2</span>: CONTACT PERSON/ AUTHORISED REPRESENTATIVE FOR THIS APPLICATION</p>
         </div>
         <div class="form-group col-md-8">
             <label for="inputAddress2"> <b>Full Name of Contact Person:</b></label>
@@ -238,12 +261,23 @@ button:hover {
             <input type="text" class="form-control" id="inputAddress2" placeholder="">
         </div>
         </div>
-        </div>
-        
-        <div class="tab">
+        </div> 
+                                                             <!-- <> -->
+           <div class="tab">
             <div class="row">
+                <div class="col-md-2">
+                    <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                </div>
+                <div class="col-md-8">
+                <h4 class="text-center mt-3"><b> ISLAMIC CO-ORDINATING COUNCIL
+                    OF VICTORIA (ICCV) PTY. LTD.</b></h4>
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                </div>
+                <br>
                 <div class="col-md-12">
-                    <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4"> SECTION 3: LOCATION DETAILS AND SCOPE (Separate Application Form Required for Each Location)</p>
+                    <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4 mt-4"> SECTION &nbsp;<span style="font-size:22px;">3</span>: LOCATION DETAILS AND SCOPE (Separate Application Form Required for Each Location)</p>
                 </div>
                 <div class="form-group col-md-12">
                   <label for="inputEmail4"><b>Name of Facility/Site: </b></label>
@@ -256,54 +290,106 @@ button:hover {
               
               <div class="form-group col-md-12">
                 <label for="inputAddress"> <b>Scope of Halal Certification being sought: (e.g., Production and packaging of Fresh Chilled Meat)  </b></label>
-                <input type="textarea" class="form-control" id="inputAddress" placeholder="Business / Trading Name">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Is your facility / site fully halal dedicated?  (Y / N)</b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Does your facility / site have a Halal Program?  (Y / N)</b></label><br>
                 <p>Export destinations (countries) where the accredited product/s are to be offered from this facility:</p>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
- <!-- < certification standards> -->
+              <div class=" col-md-12 mt-3">
+                <label for="inputAddress2"> <b>Certification Standard/s:</b></label>                  
+                <table class="t2" style="border:none !important;">
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Indonesian Halal Standard</td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Kingdom of Saudi Arabia Halal Standard</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Malaysian Halal Standard</td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>GSO Halal Standard: </td>
+                    </tr>
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Singapore Halal Standard</td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td> Egypt Halal Standard</td>
+                    </tr>
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Any other Halal Standard:</td>
+                        
+                    </tr>
+                    
+               </table>
+               </div>
+               <br><br>
+
+               <div class=" col-md-12 mt-3">
+                <label for="inputAddress2"> <b>Audit Type:</b></label>                  
+                <table class="t2" style="border:none !important;">
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Initial Certification </td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Change in Scope – Addition of Products/Services</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td> Re-Certification </td>
+                        <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                        <td>Change in Scope – Addition of Sites or Decrease of Scope </td>
+                    </tr>
+                   
+                    
+               </table>
+               </div>
+               <br><br>
 
 
 
 
 
-              <div class="form-group col-md-12">
+              <div class="form-group col-md-12 mt-4">
                 <label for="inputAddress2"> <b> Per your scope, what are the significant processes and/or products to be covered under the certification?</b></label>
                 
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
 
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Is there any part of the significant processes that is outsourced?</b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Are there legal/regulatory requirements relevant to the scope of the certification (e.g. Food Safety *-    Certification, Government/Local Council regulations)?</b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Details of any other certification (like ISO, HACCP) already obtained </b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Details of any other products<u> produced</u> at the same site that are non-Halal such as non-Halal animal ingredients or consumable alcohol? </b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="inputAddress2"> <b> Details of any other products<u> stored </u>at the same site that are non-Halal such as non-Halal animal ingredients or consumable alcohol?  </b></label>
-                <input type="textarea" class="form-control" id="inputAddress2" placeholder="">
+                <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
               </div>
              
-               <div class=" col-md-12">
-                <table class="table">
-                    <thead>
+                <div class=" col-md-12 table table-responsive">
+                <table class="table table-bordered  tbl mt-4">
+                  <thead>
                       <tr>
                         <th scope="col">Total Number of Employees  *</th>
                         <th scope="col">Number of  Shifts and Hours</th>
@@ -317,28 +403,39 @@ button:hover {
                         <td></td>
                       </tr>
                     </tbody>
-                    <p><b>Note </b>* Employees include permanent and non-permanent (seasonal, temporary and sub-contracted) personnel.</p>
+                    
                   </table>
+                  <p><b>Note </b>* Employees include permanent and non-permanent (seasonal, temporary and sub-contracted) personnel.</p>
                </div>
+               
               
-                <p><b>Convenient days</b>, dates and times for inspection visit</p>
-                <div class=" col-md-12">
-                    <table class="table">
+                
+               <div class=" col-md-12 table table-responsive">
+                    <p><b>Convenient days</b>, dates and times for inspection visit</p>
+                    <table class="table table-bordered  tbl mt-4">
                         <thead>
                           <tr>
-                            <th scope="col">Days</th>
-                            <th scope="col">Mon</th>
-                            <th scope="col">Tue</th>
-                            <th scope="col">Wed</th>
-                            <th scope="col">Thu</th>
-                            <th scope="col">Fri</th>
+                            <th scope="col" class="text-center"><b>Days</b></th>
+                            <th scope="col" class="text-center">Mon</th>
+                            <th scope="col" class="text-center">Tue</th>
+                            <th scope="col" class="text-center">Wed</th>
+                            <th scope="col" class="text-center">Thu</th>
+                            <th scope="col" class="text-center">Fri</th>
                             
                             
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td>Date</td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Time</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -350,23 +447,537 @@ button:hover {
                       </table>
                    </div>
                   
-                  
-           
-            
-            
-            
-            </div>
-            </div>
+                   <div class=" col-md-12 table table-responsive">
+                    <h4><b> Products and Ingredients</b></h4>
+                    <p>Details of Product(s) Requiring Halal Certification (Please complete product Data Sheet per each product)</p>
+                    <table class="table table-bordered  tbl mt-4">
+                      <thead>
+                          <tr>
+                            <th scope="col" class="text-center"> No. of Product  </th>
+                            <th scope="col" class="text-center">Brand Name</th>
+                            <th scope="col" class="text-center">Name of  Product on Label / Packaging</th>
+                            <th scope="col" class="text-center">Product Data Sheet Attached Y/N</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>Please attach Product Data sheet/s with details (as per format in Attachment A).
+                    </p>
+        
+                   </div>
+                   <div class="form-group col-md-12">
+                    <label for="inputAddress"> <b>Details of any other products produced at your Establishment that are labelled with a
+                         product name that gives the impression of being non-Halal (for example refers to a consumable alcohol as a key 
+                         ingredient, or products associated with pork or pork by-products):  </b></label>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputAddress"> <b>For laboratory testing, do you agree to use ICCV’s preferred laboratory and pay 
+                        related costs?  </b></label>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class=" col-md-12">
+                    <p><b>Alternatively, please provide your preferred laboratory contact details below:</b></p>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label for="inputAddress2"> <b>Laboratory Name: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Laboratory Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress2"> <b>Tel: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Tel">
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label for="inputAddress2"> <b>Contact Person: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Contact Person">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress2"> <b>Position: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Position">
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label for="inputAddress2"> <b>Address: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Address">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress2"> <b>Post Code: </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Post Code">
+                  </div>
+                  <div class=" col-md-12">
+                    <h4><b>Production and Processing Line</b></h4>
+                    
+                                    
+                        <table class="t2" style="border:none !important;">
+                           
+                            <p>Are the Halal and Non-Halal products processed by the same equipment? </p>
+                            <tr>
+                                <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                                <td>N/A</td>
+                                <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                                <td>No</td>
+                                
+                                <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                                <td>YES</td>
+                            </tr>
+                           
+                           
+                       </table>
+                       
+                  </div>
 
-        <!-- <div class="tab">Contact Info:
-          <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-          <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-        </div> -->
-        <!-- <div class="tab">Birthday:
-          <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-          <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-          <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-        </div> -->
+
+
+                  <div class="form-group col-md-12">
+                    <label for="inputAddress2"> <b> Name of Document </b></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                  </div>
+                  <div class=" col-md-12">
+                    <h4><b>Halal Integrity and Tracking</b></h4>
+                    <table class="t2" style="border:none !important;">
+                        <p> Is there a procedure to ensure Halal products are not contaminated by Non-Halal products?</p>
+                        <tr>
+                            <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                            <td>N/A</td>
+                            <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                            <td>No</td>
+                            
+                            <td style=" width:100px;"><input type="checkbox" name="con"></td>
+                            <td>YES</td>
+                        </tr>
+                       
+                       
+                   </table>
+                   
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputAddress"> <b>Additional Details/Information	
+                         </b></label>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                  </div>
+            
+            </div>
+            </div>  
+ 
+
+
+                                                             <!-- <> -->
+              <div class="tab">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                    </div>
+                    <div class="col-md-8">
+                    <h4 class="text-center mt-3"><b> ISLAMIC CO-ORDINATING COUNCIL
+                        OF VICTORIA (ICCV) PTY. LTD.</b></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4 mt-4"> SECTION &nbsp;<span style="font-size:22px;">5</span>:: POLICIES </p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-justify"> <b>Confidentiality Policy: </b>ICCV has policies and procedures in place regarding its management 
+                            of confidential information. All information obtained from the application will remain confidential.<br>
+                            <b>Non-Discriminatory Policy:</b> ICCV shall make its services accessible to all applicants whose activities 
+                            fall within its scope of operations. All applications will be treated fairly. 
+                         </p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="bg-success  text-white p-1 text-uppercase mr-3 mb-4 mt-4"> SECTION &nbsp;<span style="font-size:22px;">6</span>: CONDITIONS OF CERTIFICATION </p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4><b>To attain and maintain certification, an applicant must agree to:</b></h4>
+                        <ol class="text-justify">
+                          
+                          <li> At all times abide by rules, fulfill the requirements and the guidelines for certification set by ICCV
+                             and/or other halal certification standards.</li>
+                          <li>Allow the Authorised Officers / Inspectors of ICCV unrestricted access to inspect the premises at any 
+                            time without prior notice.</li>
+                          <li> Immediately advise ICCV of any change in the nature of business and / or change of ownership.</li>
+                          <li> Pay the nominated fee for the Halal Certificate and any additional fee that may be imposed as a result
+                             of any breach that may require further inspections by ICCV.</li>
+                          <li> Not to transfer the Certificate to anyone or Duplicate it under any circumstance.</li>
+                        <li> Not to use any Label or Logo of ICCV once the Halal Certificate has expired or has been withdrawn.</li>
+                        <li>  Not to cook, sell or deal in any product that has not been certified as Halal or is not considered Halal
+                             suitable.</li>
+                        <li> Not to display the Halal Certificate at any premises other than for which it has been issued to.</li>
+                        <li>Return the Halal Certificate to ICCV after its expiry or withdrawal.</li>
+                        <li>Not to use its accreditation in such a manner as to bring ICCV into disrepute or make any statement relating
+                             to its accreditation misleading.</li>
+                        <li>Retain all quality records and technical records supporting results.</li>
+                        </ol>
+                      </div>
+                      <div class="col-md-12">
+                              <h5 class="text-justify"><b>In order to apply, The Applicant’s Authorised Representative must agree to the above conditions for
+                                 accreditation and must attest that all statements made on the application are correct to the best of his/her
+                                  knowledge.</b></h5>
+                                  <br>
+                                  <h5 class="text-justify"><b>I / We, acknowledge that breach of any of the above conditions and / or guidelines may result in
+                                     the Cancellation of Halal Certificate.</b></h5><br>
+                                     <h5><b>Signed on behalf of the Applicant:</b></h5>
+                      </div>
+                      <div class=" form-group col-md-6" >
+                        <hr style="width:50%;"">
+                        <p class="text-center"><b>   Name of Authorised Representative	</b></p>
+                        
+                         </div> 
+                         <div class="form-group col-md-6" >
+                            <hr style="width:50%;">
+                           
+                            <p class="text-center"><b>Signature</b></p>
+                             </div> 
+                             <div class=" form-group col-md-6" >
+                                <hr style="width:50%;"">
+                                <p class="text-center"><b>  Position Held			</b></p>
+                                
+                                 </div> 
+                                 <div class="form-group col-md-6" >
+                                    <hr style="width:50%;">
+                                   
+                                    <p class="text-center"><b>Date</b></p>
+                                     </div> 
+        
+
+                                     <div class=" col-md-12 table table-responsive">
+                                        <h4 class="text-center"><b>Table A - Classification of Halal product/Service Categories</b></h4>
+                                        <table class="table table-bordered  tbl1 mt-4" style="width:100%">
+                                            
+                                            <tbody>
+                                              <tr>
+                                                <td scope="col" rowspan="5" style="vertical-align : middle;text-align:center; width:50px; ;">Food and Feed processing</td>
+                                                <td scope="col" rowspan="5" style="vertical-align : middle;text-align:center; width:25px;">C</td>
+                                                <td scope="col" rowspan="5" style="vertical-align : middle;text-align:center; width:50px;">Food Manufacturing</td>
+                                                <td scope="col"> CI</td>
+                                                <td scope="col"> processing of perishable animal products</td>
+                                                <td scope="col" class="text-justify"> production of animal products including fish and seafood,meat,eggs,diary and fish products</td>
+                                              </tr>
+                                              <tr>
+                                                <td> CII</td>
+                                                <td>processing of perishable plant products </td>
+                                                <td class="text-justify">production of plant products including fruits and fresh juices,vegetables,grains,nuts,and pulses </td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td> CIII</td>
+                                                <td class="text-justify"> Processing of perishable animal and plant products(mixed products)</td>
+                                                <td class="text-justify"> production of mixed animal and plant products including pizza,lasagne,sandwich,dumpling,ready-to-eat meals</td>
+                                                
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>CIV</td>
+                                                <td class="text-justify">processing of ambient stable products</td>
+                                                <td class="text-justify"> Production of food from any source that are stored and sold at ambient temperature, 
+                                                    including canned foods,biscuits,snacks,oil,drinking water,beverages,pasta,flour,sugar,food-grade salt</td>
+                                                
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>CV</td>
+                                                <td>Animal slaughtering</td>
+                                                <td class="text-justify">
+                                                    processing of carcasses including slaughtering in slaughterhouses,cutting,cleaning and packing
+                                                </td>
+                                                
+                                              </tr>
+                                            </tbody>
+                                            
+                                          </table>
+                                       </div>
+                                       <div class="col-md-12">
+                                         <h4 class="text-center"><b>FOR OFFICE USE ONLY</b></h4>
+                                         <hr style="width:20%;height:2px;">
+                                       </div>
+                                           <div class="form-group col-md-6">
+                                              <label for="inputAddress2"> <b>Reviewed by</b></label>
+                                           <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <label for="inputAddress2"> <b>Date</b></label>
+                                         <input type="date" class="form-control" id="inputAddress2" placeholder="">
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <label for="inputAddress2"> <b>Approved by</b></label>
+                                         <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="inputAddress2"> <b>Date</b></label>
+                                       <input type="date" class="form-control" id="inputAddress2" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputAddress2"> <b>Approved /Declined</b></label>
+                                     <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2"> <b>Certificate No</b></label>
+                                     <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                    </div>
+                                    <div class="col-md-12"><h3><b>Note:</b></h3>
+                                    
+                                    <h5><b>Completed application forms should be sent to ICCV at the above address.  
+                                        For further enquiries, please contact our Office:</b></h5>
+                                    </div>
+                                    <br>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2"> <b>Tel: (03) 9380 5467 </b></label>
+                                     
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2"> <b>Email : office@iccv.com.au</b></label>
+                                     
+                                    </div>
+                </div>                       
+
+                    </div>  
+
+                            <!-- < attachment form> -->
+
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                            </div>
+                            <div class="col-md-8">
+                            <h4 class="text-center mt-3"><b> ISLAMIC CO-ORDINATING COUNCIL
+                                OF VICTORIA (ICCV) PTY. LTD.</b></h4>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/stamp2.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150">
+                            </div>
+                            <br>
+                            
+                                  <div class="col-md-12">
+                                    <hr style="height:2px;border-width:0;color:black;background-color:black">
+                                    <h3 class="text-center">Attachment A – Product Data Sheet <br>
+                                        <small>(Please complete per each product)</small></h3>
+                                  </div>
+
+                                  <div class="form-group col-md-8">
+                                    <label for="inputAddress2"> <b>Product Name</b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAddress2"> <b>Product Code</b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputAddress2"> <b>Brand Name</b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputAddress2"> <b>Pdoduct Description <small>(Packaging shape and size)</small></b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputAddress2"> <b>Production Site</b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputAddress2"> <b>Packaging material</b></label>
+                                 <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+
+                                <div class=" col-md-12 table table-responsive">
+                                    
+                                    <table class="table table-bordered  tbl mt-4">
+                                      <thead>
+                                          <tr>
+                                            <th scope="col" > Name Of Ingredient  </th>
+                                            <th scope="col" >Origin Of Ingredient <br><small>(Animal,plant,synthetic)</small> </th>
+                                            <th scope="col" >Product Code<small>If There Is One</small></th>
+                                            <th scope="col" >Supplier</th>
+                                            <th>Manufacturer</th>
+                                            <th>Halal Certificate Yes / No Name Of Certifier</th>
+                                            <th>Expiry Date Of Halal Certificate</th>
+                                            <th>PIF Or Prod Spec</th>
+                                            <th>Any Additional Info /Material Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                   </div>
+
+                            </div>
+                            </div>
+
+        
         <!-- <div class="tab">Login Info:
           <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
           <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
