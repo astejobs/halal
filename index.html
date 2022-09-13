@@ -281,7 +281,7 @@ footer a {
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="./index1.html">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -290,9 +290,9 @@ footer a {
                 </div>
                 <span>or use your account</span>
                 <input type="text" class="input1" placeholder="username" required="required" />
-                <input type="password" class="password" placeholder="Password"  required="required"/>
+                <input type="password" class="input1" placeholder="Password"  />
                 <a href="#">Forgot your password?</a>
-                <button type="submit"  class="btnLogin btn-success">Sign In</button>
+                <button   class="btnLogin btn-success">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -334,23 +334,32 @@ signInButton.addEventListener('click', () => {
 
 // });
 $(document).ready(function(){
+// 	$('.input1').attr('required',true);
+// 	$('.password').attr('required',true);
 
+// $('.btnLogin').click(function(){
+	
+// 	 console.log("sssss",$('.input1').val());
+// 	 console.log("password----"+$('.password').val());
+// if($('.input1').val()==''){
+// 	console.log("insideeeee");
+// }
+// 	else if( $('.password').val()==null){
+// 		console.log("empty password");
+// 	}
+// else{
+// 	console.log("elseeee"+$('.input1').val()+"ghghghghghgh---"+$('.password').val())
+// 	 window.location.href="./index1.html";
+// 	}
+// });
+$('.btnLogin').attr("disabled",true);
+$('.input1').on('keyup',function(){
+	$('.btnLogin').attr("disabled",false);
 
+});
 $('.btnLogin').click(function(){
-	$('.input1').attr('required',true);
-	$('.password').attr('required',true);
-	 console.log("sssss",$('.input1').val());
-	 console.log("password----"+$('.password').val());
-if($('.input1').val()==''){
-	console.log("insideeeee");
-}
-	else if( $('.password').val()==null){
-		console.log("empty password");
-	}
-else{
-	console.log("elseeee"+$('.input1').val()+"ghghghghghgh---"+$('.password').val())
-	 window.location.href="./index1.html";
-	}
+	document.location.href="./index1.html";
+
 });
 });
     </script>
